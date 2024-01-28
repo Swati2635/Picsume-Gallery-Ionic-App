@@ -5,15 +5,19 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { HttpClientModule } from '@angular/common/http';
+import { PicDetailComponent } from '../Components/pic-detail/pic-detail.component';
+import { ImgdetailPopoverComponent } from '../Components/imgdetail-popover/imgdetail-popover.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, PicDetailComponent, ImgdetailPopoverComponent],
 })
 export class HomePageModule {}

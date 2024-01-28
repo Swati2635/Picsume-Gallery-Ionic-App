@@ -1,0 +1,23 @@
+<!-- image-info-popover.component.html -->
+<ion-content>
+  <ion-list lines="none">
+    <ion-item>
+      <ion-label>Author : {{ imgInfo.author }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Width : {{ imgInfo.width }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Height : {{ imgInfo.height }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <span>Url</span> :
+      <span
+        ><a class="subhead" [href]="imgInfo.download_url" target="_blank">{{
+          imgInfo.download_url
+        }}</a></span
+      >
+    </ion-item>
+  </ion-list>
+  <!-- <ion-button expand="block" (click)="closePopover()">Close</ion-button> -->
+</ion-content>
